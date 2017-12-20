@@ -1,46 +1,146 @@
+main{
+	width: 80%;
+}
 body {
 	font-family: "Crimson Text", "Times New Roman", serif;
 	background-color: #F2FFFC;
 	font-size: 120%;
+	line-height: 1.5;
 }
 
 h1, h2 {
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
+.subtitulo-texto-trabalho{
+	clear: left;
+}
+.subtitulo-texto-experiencia{
+	clear: both;
+}
 
-main h1 {
+.titulo-principal {
 	text-align: center;
 	background-color: #851944;
 	color: #FFF;
+	padding: 25px;
+	border-bottom: 10px solid black;
+	font-size: 60px;
+	text-transform: uppercase;
 }
 
 p {
 	text-align: justify;
+	margin: 20px 0;
 }
 
-blockquote {
+.citacao-bio-fiat, 
+.citacao-bio-petrobras{
 	background-color: #D9E5E3;
+	border: 10px solid #C2CCCA;
+	width: 250px;
+	box-sizing: border-box;
+	margin: 20px 40px;
+}
+.citacao-bio-fiat{
+	float: right;
+}
+.citacao-bio-petrobras{
+	float: lef;
 }
 
-aside {
+.navegacao-site {
+	text-align: center;
 	background-color: #3C1D3D;
 	color: #F2FFFC;
-}
-
-footer {
-	background-color: #000;
-	color: #F2FFFC;
-}
-
-nav a {
-	color: #F2FFFC;
+	float: right;
+	float: left;
+	box-sizing: border-box;
 }
 
 main a {
 	color: #851944;
 }
 
-aside a {
+.navegacao-site a {
 	color: inherit;
 	font-family: "Open Sans Condensed", sans-serif;
+	text-transform: lowercase;
+}
+
+.citacao-bio-fiat, .citacao-bio-petrobras, .navegacao-site, .clearfix {
+    padding: 20px;
+}
+
+.container {
+	width: 720px;
+	margin: auto;
+	padding: 30px 0;
+}
+
+.navegacao-site h1 {
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+.subtitulo-texto-trabalho, .subtitulo-texto-experiencia{
+	font-size: 30px;
+}
+.minha-foto, .navegacao-site{
+	width: 20%;
+}
+.navegacao-site{
+	clear: right;
+}
+
+.icones-redes-sociais li {
+	display: inline-block;
+}
+
+.artigo {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+.icones-redes-sociais a{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	text-indent: -9999;
+	/*text-indent: -9999; ou font-size: 0;*/
+}
+
+.leia-mais {
+	padding: 8px;
+	margin: 16px;
+	display: block;
+	font-size: 24px;
+	text-align: center;
+	background-color: #E6E7E8;
+}
+
+.github{
+	background-image: url(/img/github.png);
+	background-repeat: no-repeat;
+}
+.twitter{
+	background-image: url(/img/twitter.png);
+	background-repeat: no-repeat;
+}
+.linkedin{
+	background-image: url(/img/linkedin.png);
+	background-repeat: no-repeat;
+}
+
+.clearfix {
+	background-color: #000;
+	color: #F2FFFC;
+	clear: both;
 }
