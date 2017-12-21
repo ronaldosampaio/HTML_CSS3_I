@@ -2,53 +2,56 @@
 /* clear:left ou right;flutua abaixo lado direito ou esquerdo */
 /* clear:both; -> fica sempre abaixo da outra do float */
 
-body{
-	margin: 164px 400px;
-	border:1px solid black;
-	padding:2px;
-}
 
-h1{
-	margin: 30px;
+.container{
+	margin: 10px 10px 10px 10px;
+	width: 410px;
+	height: 210px;
+	border:2px solid black;
+	padding:4px;
+	font-size: 25px;
 	text-align: center;
-	font-size: 40px;
+	line-height: 100px;/* alinhar texto ao meio */
 }
-
-.float1{
-	text-align: center;
-	background-color:darkred;
+.primeiro{
+	border: 1px solid black;
+	background-color: red;
 	width: 100px;
 	height: 100px;
-	float: left;	
+	float: left;
 }
 
-.float2{
+.segundo{
+	border: 1px solid black;
 	background-color: blue;
 	width: 100px;
 	height: 100px;
-	float: left;	
+	float: left;
 }
 
-.float3{
+.terceiro{
+	border: 1px solid black;
+	line-height: 200px;
 	background-color: green;
 	width: 200px;
 	height: 200px;
-	float:right;
+	float: right;
 }
 
-.float4{
-	background-color: coral;
+.quarto{
+	border:1px solid black;
+	background-color: orange;
 	width: 100px;
 	height: 100px;
 	float: left;
-	clear: both;
+	clear: left;	
 }
 
-.float5{
-	background-color: blueviolet;
+.quinto{
+	border: 1px solid black;
+	background-color: magenta;
 	width: 100px;
 	height: 100px;
-	float: left;
-	clear: both
+	float: left;	
 }
 
