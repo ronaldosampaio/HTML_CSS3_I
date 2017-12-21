@@ -1,0 +1,54 @@
+/* float: left ou float: right -> flutua na pagina ok */
+/* clear:left ou right;flutua abaixo lado direito ou esquerdo */
+/* clear:both; -> fica sempre abaixo da outra do float */
+
+body{
+	margin: 164px 400px;
+	border:1px solid black;
+	padding:2px;
+}
+
+h1{
+	margin: 30px;
+	text-align: center;
+	font-size: 40px;
+}
+
+.float1{
+	text-align: center;
+	background-color:darkred;
+	width: 100px;
+	height: 100px;
+	float: left;	
+}
+
+.float2{
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+	float: left;	
+}
+
+.float3{
+	background-color: green;
+	width: 200px;
+	height: 200px;
+	float:right;
+}
+
+.float4{
+	background-color: coral;
+	width: 100px;
+	height: 100px;
+	float: left;
+	clear: both;
+}
+
+.float5{
+	background-color: blueviolet;
+	width: 100px;
+	height: 100px;
+	float: left;
+	clear: both
+}
+

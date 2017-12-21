@@ -1,5 +1,5 @@
 /*float: left ou float: right -> flutua na pagina ok*/
-/*clear:both; -> fica sempre abaixo do float */
+/*clear:both; -> fica sempre abaixo da outra do float */
 
 main{
 	width: 80%;
@@ -45,9 +45,11 @@ p {
 	box-sizing: border-box;
 	margin: 20px 40px;
 }
+
 .citacao-bio-fiat{
 	float: right;
 }
+
 .citacao-bio-petrobras{
 	float: left;
 }
