@@ -2,7 +2,9 @@
 /*clear:both; -> fica sempre abaixo da outra do float */
 
 main{
-	width: 80%;
+	width: 85%;
+	float: left;
+	padding-bottom: 80px;
 }
 body {
 	font-family: "Crimson Text", "Times New Roman", serif;
@@ -58,9 +60,9 @@ p {
 	text-align: center;
 	background-color: #3C1D3D;
 	color: #F2FFFC;
-	float: right;
-	float: left;
-	box-sizing: border-box;
+	position: relative;
+	top: 300px;
+	clear: right;
 }
 
 main a {
@@ -102,11 +104,18 @@ em {
 }
 
 .minha-foto, .navegacao-site{
-	width: 20%;
+  
+	float: right;
+    box-sizing: border-box;/* Quando você define box-sizing: border-box; em um elemento, os valores do padding e do border não são adicionados em sua largura.*/
+	
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
 }
-
-.navegacao-site{
-	clear: right;
+img{
+	position: absolute;
+	width: 300px;
+	top: 0px;
+	right: 0px;	
 }
 
 .icones-redes-sociais li {
@@ -152,5 +161,10 @@ em {
 .clearfix {
 	background-color: #000;
 	color: #F2FFFC;
-	clear: both;
+	position: fixed;/*fixar o rodapé abaixo*/
+	width: 100%;
+	left: 0px;
+	bottom: 0px;
+	box-sizing: border-box;
+	
 }
