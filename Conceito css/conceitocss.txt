@@ -1,0 +1,18 @@
+float: left ou float: right -> flutua na pagina esquerda de direita.
+
+clear:both; -> fica sempre abaixo da outra do float.
+
+box-sizing: border-box; Quando você define em um elemento, os valores do padding e do border não são adicionados em sua largura.
+
+position: absolute; posição do elemento fica acima de qualquer texto e imagem.
+O absolute coloca um elemento em qualquer parte da página, mas o elemento é afetado pela rolagem da página.
+
+position: static; O valor que faz com que um elemento fique na mesma posição independente da rolagem da página é o fixed.
+
+position: relative; O position relative posiciona o elemento em relação a si mesmo. Ou seja, o ponto zero será o canto superior esquerdo, e ele começará a contar a partir dali.
+
+position: fixed; irá fixar a posição do elemento na coordenada que você definir. A medida que a página é rolada, o elemento continua fixo na posição que você definiu e o conteúdo da página rola normalmente.
+Geralmente é usado para fixar elementos como cabeçalhos ou sidebars.
+position: fixed; fixar qualquer elemento.
+
+text-indent: -9999; propriedade para esconder texto, links etc.

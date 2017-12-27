@@ -1,11 +1,3 @@
-/*float: left ou float: right -> flutua na pagina ok*/
-/*clear:both; -> fica sempre abaixo da outra do float */
-
-main{
-	width: 85%;
-	float: left;
-	padding-bottom: 80px;
-}
 body {
 	font-family: "Crimson Text", "Times New Roman", serif;
 	background-color: #F2FFFC;
@@ -15,12 +7,6 @@ body {
 
 h1, h2 {
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
-}
-.subtitulo-texto-trabalho{
-	clear: both;
-}
-.subtitulo-texto-experiencia{
-	clear: both;
 }
 
 .titulo-principal {
@@ -33,14 +19,12 @@ h1, h2 {
 	text-transform: uppercase;
 }
 
-
 p {
 	text-align: justify;
 	margin: 20px 0;
 }
 
-.citacao-bio-fiat, 
-.citacao-bio-petrobras{
+.citacao-bio {
 	background-color: #D9E5E3;
 	border: 10px solid #C2CCCA;
 	width: 250px;
@@ -48,21 +32,20 @@ p {
 	margin: 20px 40px;
 }
 
-.citacao-bio-fiat{
-	float: right;
-}
-
-.citacao-bio-petrobras{
-	float: left;
-}
-
 .navegacao-site {
 	text-align: center;
 	background-color: #3C1D3D;
 	color: #F2FFFC;
-	position: relative;
-	top: 300px;
-	clear: right;
+}
+
+.rodape-pagina {
+	background-color: #000;
+	color: #F2FFFC;
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 }
 
 main a {
@@ -72,10 +55,9 @@ main a {
 .navegacao-site a {
 	color: inherit;
 	font-family: "Open Sans Condensed", sans-serif;
-	text-transform: lowercase;
 }
 
-.citacao-bio-fiat, .citacao-bio-petrobras, .navegacao-site, .clearfix {
+.citacao-bio, .navegacao-site, .rodape-pagina {
     padding: 20px;
 }
 
@@ -98,24 +80,9 @@ em {
 	font-style: italic;
 }
 
-.subtitulo-texto-trabalho, .subtitulo-texto-experiencia, .subtitulo-texto-comunidade{
+.subtitulo-texto {
 	font-size: 30px;
 	clear: both;
-}
-
-.minha-foto, .navegacao-site{
-  
-	float: right;
-    box-sizing: border-box;/* Quando você define box-sizing: border-box; em um elemento, os valores do padding e do border não são adicionados em sua largura.*/
-	
-	border-left: 10px solid black;
-	border-bottom: 10px solid black;
-}
-img{
-	position: absolute;
-	width: 300px;
-	top: 0px;
-	right: 0px;	
 }
 
 .icones-redes-sociais li {
@@ -127,13 +94,6 @@ img{
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 20px;
 }
-.icones-redes-sociais a{
-	width: 40px;
-	height: 40px;
-	display: inline-block;
-	text-indent: -9999;
-	/*text-indent: -9999; ou font-size: 0;*/
-}
 
 .leia-mais {
 	padding: 8px;
@@ -144,27 +104,63 @@ img{
 	background-color: #E6E7E8;
 }
 
-.github{
-	background-image: url(/img/github.png);
-	background-repeat: no-repeat;
-}
-.twitter{
-	background-image: url(/img/twitter.png);
-	background-repeat: no-repeat;
+nav a {
+	text-transform: lowercase;
 }
 
-.linkedin{
-	background-image: url(/img/linkedin.png);
-	background-repeat: no-repeat;
+.icones-redes-sociais a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	text-indent: -99999px;
 }
 
-.clearfix {
-	background-color: #000;
-	color: #F2FFFC;
-	position: fixed;/*fixar o rodapé abaixo*/
-	width: 100%;
-	left: 0px;
-	bottom: 0px;
+.github {
+	background-image: url(../img/github.png);
+}
+
+.twitter {
+	background-image: url(../img/twitter.png);
+}
+
+.linkedin {
+	background-image: url(../img/linkedin.png);
+}
+
+.fiat {
+	float: right;
+}
+
+.petrobras {
+	float: left;
+}
+
+main {
+	float: left;
+	width: 85%;
+	padding-bottom: 80px;
+}
+
+.minha-foto, .navegacao-site {
+	float: right;
 	box-sizing: border-box;
-	
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
+}
+
+cite{
+	font-style: italic;
+	float: right;
+}
+
+.minha-foto {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.navegacao-site {
+	width: 15%;
+	position: relative;
+	top: 310px;
 }
